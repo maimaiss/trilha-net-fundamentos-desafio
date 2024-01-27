@@ -2,12 +2,16 @@ using System.Text.RegularExpressions;
 
 namespace DesafioFundamentos.Models
 {
+    //define uma classe
     public class Estacionamento
     {
+        //elementos privados, somente a própria classe pode ter acesso
         private decimal precoInicial = 0;
         private decimal precoPorHora = 0;
         private List<string> veiculos = new List<string>();
 
+
+        //construtor, método especial que é chamado quando um objeto da classe é criado
         public Estacionamento(decimal precoInicial, decimal precoPorHora)
         {
             this.precoInicial = precoInicial;
@@ -41,9 +45,6 @@ namespace DesafioFundamentos.Models
                 Console.WriteLine("----");
                 AdicionarVeiculo();
             }
-
-
-
         }
 
         public void RemoverVeiculo()
