@@ -21,7 +21,7 @@ namespace DesafioFundamentos.Models
         public void AdicionarVeiculo()
         {
             //Pedir para o usuário digitar uma placa e adicionar na lista "veiculos"
-            Console.WriteLine("Digite a placa do veículo para estacionar no formato (XXX-0000):");
+            Console.WriteLine("Digite a placa do veículo para estacionar no formato XXX-0000:");
             string placa = Console.ReadLine();
             //Expressão regular para verificar se a placa está no formato correto.
             Regex regex = new Regex("^[A-Z]{3}-[0-9]{4}$");
